@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://crehocenvvwix"]
+
+[ext_resource type="Texture2D" uid="uid://c8yhqvjvyuvnb" path="res://assets/lola.png" id="1_s3ltf"]
+[ext_resource type="PackedScene" uid="uid://4ecgbqfdno42" path="res://tree.tscn" id="2_1n60w"]
+[ext_resource type="Texture2D" uid="uid://c2yhpjl31uygt" path="res://assets/kitty.webp" id="3_gk8w0"]
+
+[node name="Lola" type="Sprite2D"]
+position = Vector2(400, 425)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("1_s3ltf")
+
+[node name="tree" parent="." instance=ExtResource("2_1n60w")]
+position = Vector2(3358.333, -2066.6667)
+
+[node name="tree2" parent="." instance=ExtResource("2_1n60w")]
+position = Vector2(5058.333, -308.3335)
+
+[node name="tree3" parent="." instance=ExtResource("2_1n60w")]
+position = Vector2(-2416.667, -2291.6667)
+
+[node name="tree4" parent="." instance=ExtResource("2_1n60w")]
+position = Vector2(1750.0001, -716.6666)
+scale = Vector2(0.9999999, 0.9999999)
+
+[node name="Kitty" type="Sprite2D" parent="."]
+position = Vector2(4158.333, 1008.33307)
+scale = Vector2(3.48, 3.48)
+texture = ExtResource("3_gk8w0")
